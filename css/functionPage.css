@@ -1,0 +1,66 @@
+.functionPageTitle {
+		padding-top: 10rem;
+		font-family: PingFang SC;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 67px;
+		text-align: center;
+		color: #000000;
+	}
+.functionNormalBtn {
+	border-radius: 1.25rem;
+	height: 2.5rem;
+	padding: 0.5rem, 1rem;
+	background-color: #04C36C;
+	border: none;
+	font-family: PingFang SC;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	color: #FFFFFF;
+	margin-right: 0.5rem;
+	margin-top: 37px;
+}
+
+.functionNormalDescFont {
+	font-family: PingFang SC;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center;
+	color: #71777E;
+	margin-top: 48px;
+	margin-bottom: 80px;
+}
+
+@media(max-width: 99999px) {
+	.functionExpandingImg {
+		width: 740px;
+		height: 641px;
+	}
+}
+
+@media(max-width: 1399.98px) {
+	
+}
+
+@media(max-width:1199.98px) {
+	
+}
+
+@media(max-width:991.98px) {
+	.functionExpandingImg {
+		width: 629px;
+		height: 545px;
+	}
+}
+
+@media(max-width:767.98px) {
+	.functionExpandingImg {
+		width: 518px;
+		height: 448px;
+	}
+}
