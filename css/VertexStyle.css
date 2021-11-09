@@ -68,6 +68,25 @@ body {
 		padding-top: 7.5625rem;
 		padding-bottom: 12.1875rem;
 	}
+	
+	.main-download-iOS-btn {
+		background-color: #000000; 
+		height: 52px; 
+		padding: 0.875rem 3.6875rem !important; 
+		border-radius: 12px !important;
+		color: white;
+		margin-top: 1.875rem;
+		text-align: center;
+	}
+	.main-download-android-btn {
+		background-color: #04C36C; 
+		height: 52px; 
+		padding: 0.875rem 3.6875rem !important; 
+		border-radius: 12px !important;
+		color: white;
+		margin-top: 1.875rem;
+	}
+	
 	.aboutTitleFont {
 		font-weight: 600;
 		font-size: 54px;
@@ -184,7 +203,7 @@ body {
 	}
 
 	.main-normal-descImage {
-		width: 560px;
+		width: 95%;
 		height: auto;
 	}
 

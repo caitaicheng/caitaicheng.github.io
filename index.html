@@ -7,7 +7,7 @@
 		<!-- Bootstrap core CSS -->
 		<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 		<script type='text/javascript' src="http://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>          
-		<script type="text/javascript" src="http://cdn.staticfile.org/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+		<script type="text/javascript" src="js/qrcode.min.js"></script>
 		<!-- Custom styles for this template -->
 		<link href="css/VertexStyle.css" rel="stylesheet">
 
@@ -83,10 +83,10 @@
 
 				<div
 					style="background-image: url(img/首页-bg1@2x.png); -moz-background-size:100% ; background-size:100% ;">
-					<div class=" mx-auto text-center main-price-bottom">
+					<div class="text-center main-price-bottom">
 						<h3 class="main-price-marginTop main-normal-title">成本低</h3>
-						<p class="text-center" style="margin-top: 40px; max-width: 25.5625rem;">
-							输入文本为词条，输入“·”连接文本为词链 摆脱格式、序列、层级的束缚 降低文本输入及组织的成本
+						<p class="text-center" style="margin-top: 40px;">
+							输入文本为词条，输入“·”连接文本为词链<br>摆脱格式、序列、层级的束缚<br>降低文本输入及组织的成本
 						</p>
 						<img class="main-normal-descImage" src="img/亮点1-输入成本低@2x.png" style="margin-top: 50px;">
 					</div>
@@ -95,9 +95,9 @@
 				<div
 					style="background-image: url(img/首页-bg2@2x.png); -moz-background-size:100% ; background-size:100% ;">
 					<div class="mx-auto text-center main-price-bottom">
-						<h3 class="main-normal-title">可迭代的知识链路</h3>
-						<p class="text-center" style="margin-top: 40px; max-width: 484px;">
-							编辑、追加、删除、添加链接/注释……属性极多，操作极简 以简单规则支持极大的可延展性和个体创造力 同时拓扑结构更灵活，可随时查看全局关系
+						<h3 class="main-normal-title">唯一入口，快速精准</h3>
+						<p class="text-center" style="margin-top: 40px;">
+							创建和搜索同一入口，最大程度缩短大脑反应路径<br>输入过程中系统自动联想相关词条/词链<br>弥补人类记忆的不准确性
 						</p>
 						<img class="main-normal-descImage" src="img/亮点2-唯一入口@2x.png" style="margin-top: 50px;">
 					</div>
@@ -105,6 +105,17 @@
 
 				<div
 					style="background-image: url(img/首页-bg3@2x.png); -moz-background-size:100% ; background-size:100% ;">
+					<div class="mx-auto text-center main-price-bottom">
+						<h3 class="main-normal-title">可迭代的知识链路</h3>
+						<p class="text-center" style="margin-top: 40px;">
+							编辑、追加、删除、添加链接/注释……属性极多，操作极简<br>以简单规则支持极大的可延展性和个体创造力<br>同时拓扑结构更灵活，可随时查看全局关系
+						</p>
+						<img class="main-normal-descImage" src="img/亮点3-可迭代@2x.png" style="margin-top: 50px;">
+					</div>
+				</div>
+
+				<div
+					style="background-image: url(img/首页-bg4@2x.png); -moz-background-size:100% ; background-size:100% ;">
 					<div class="mx-auto text-center main-price-bottom">
 						<h3 class="main-normal-title">分享交流、拓展边界</h3>
 						<p class="text-center" style="margin-top: 40px;">
@@ -120,23 +131,23 @@
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-xxl-5 text-center" style="margin: auto;">
-						<div id="" style="margin: auto;">
-							<img id="qrcodeiOS" src="http://www.gbtags.com/gb/qrcode?t=http://www.gbtags.com&s=200"
-								style="width: 240px;height: 240px; margin: 20px;">
+						<div class="text-center" style="margin: auto;">
+							<div id="qrcodeiOS" style="width: 240px;height: 240px; padding: 20px; background-color: white; margin: auto;"></div>
 						</div>
-						<p type="button" class="btn btn-primary" style="background-color: #000000;">
-							<img src="img/iOS.svg" style="width: 23px; height: 23px;">
-							下载iOS版本</p>
+						<p type="button" class="main-download-iOS-btn text-center" onclick="downios()">
+							<img src="img/iOS.png" style="width: 19.8px; height: 23px;margin-right: 0.5rem;margin-bottom: 6px;">
+							下载iOS版本
+						</p>
 					</div>
 					<div class="col-xxl-5 text-center" style="margin: auto;">
-						<div id="">
-							<img id="qrcodeAndroid" src="http://www.gbtags.com/gb/qrcode?t=http://www.gbtags.com&s=200"
-								style="width: 240px;height: 240px; margin: 20px;">
+						<div id="text-center">
+							<div id="qrcodeAndroid"
+								style="width: 240px;height: 240px; padding: 20px; margin: auto;"></div>
 						</div>
-						<p type="button" class="btn btn-primary" style="background-color: #04C36C; border: none;">
-							<img src="img/Android.svg" style="width: 23px; height: 23px;">
+						<p type="button" class="main-download-android-btn" onclick="downAndroid()">
+							<img src="img/Android.png" style="width: 22.6px; height: 25.5px;margin-right: 0.5rem;">
 							下载Android版本
-							</p>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -148,6 +159,35 @@
 		</footer>
 
 		<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
+		<script type="text/javascript">
+			function productQRCode() {
+				var qrcode1 = new QRCode(document.getElementById("qrcodeiOS"), {text:"",
+					width: 200,
+					height: 200,
+					colorDark : "#000000",
+					colorLight : "#ffffff",
+					correctLevel : QRCode.CorrectLevel.H});
+				qrcode1.clear();
+				qrcode1.makeCode("https://apps.apple.com/app/id1587846395");
+				
+				
+					var qrcode2 = new QRCode(document.getElementById("qrcodeAndroid"), {text:"",
+						width: 200,
+						height: 200,
+						colorDark : "#000000",
+						colorLight : "#ffffff",
+						correctLevel : QRCode.CorrectLevel.H});
+					qrcode2.clear();
+					qrcode2.makeCode("https://baidu.com");
+			}
+			productQRCode()
+			function downios() {
+				console.log("下载iOS")
+				window.open("https://apps.apple.com/app/id1587846395")
+			}
+			function downAndroid() {
+				console.log("下载android")
+			}
+		</script>
 	</body>
 </html>
