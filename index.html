@@ -130,22 +130,27 @@
 			<h2 class="main-normal-title" style="font-size: 2.5rem;">免费下载应用</h2>
 			<div class="container">
 				<div class="row text-center">
-					<div class="col-xxl-5 text-center" style="margin: auto;">
+					<div class="col-xxl-5 text-center" style="margin: auto; padding-top: 6.875rem;">
 						<div class="text-center" style="margin: auto;">
-							<div id="qrcodeiOS" style="width: 240px;height: 240px; padding: 20px; background-color: white; margin: auto;"></div>
+							<div id="qrcodeiOS"
+								style="width: 240px;height: 240px; padding: 20px; background-color: white; margin: auto;">
+							</div>
 						</div>
-						<p type="button" class="main-download-iOS-btn text-center" onclick="downios()">
-							<img src="img/iOS.png" style="width: 19.8px; height: 23px;margin-right: 0.5rem;margin-bottom: 6px;">
+						<p class="main-download-iOS-btn text-center" onclick="downios()">
+							<img src="img/iOS.png"
+								style="width: 19.8px; height: 23px;margin-right: 0.5rem;margin-bottom: 6px;">
 							下载iOS版本
 						</p>
 					</div>
-					<div class="col-xxl-5 text-center" style="margin: auto;">
+					<div class="col-xxl-5 text-center" style="margin: auto; padding-top: 6.875rem;">
 						<div id="text-center">
-							<div id="qrcodeAndroid"
-								style="width: 240px;height: 240px; padding: 20px; margin: auto;"></div>
+							<div id="qrcodeAndroid" 
+								style="width: 240px;height: 240px; padding: 20px; background-color: white; margin: auto;">
+							</div>
 						</div>
-						<p type="button" class="main-download-android-btn" onclick="downAndroid()">
-							<img src="img/Android.png" style="width: 22.6px; height: 25.5px;margin-right: 0.5rem;">
+						<p class="main-download-android-btn text-center" onclick="downAndroid()">
+							<img src="img/Android.png" 
+								style="width: 22.6px; height: 25.5px;margin-right: 0.5rem;">
 							下载Android版本
 						</p>
 					</div>
@@ -155,36 +160,43 @@
 
 		<footer class="blog-footer text-center" style="height: 17.875rem;">
 			<img src="img/logo+text.svg" style="width: 11.0625rem; height: 2.875rem; margin-top: 80px;">
-			<p class="normal-font" style="color: #71777E; font-size: 1rem; margin-top: 40px;">Copyright © 2021 厦门壹拾科技有限公司 All rights reserved</p>
+			<p class="normal-font" style="color: #71777E; font-size: 1rem; margin-top: 40px;">Copyright © 2021
+				厦门壹拾科技有限公司 All rights reserved</p>
 		</footer>
 
 		<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript">
 			function productQRCode() {
-				var qrcode1 = new QRCode(document.getElementById("qrcodeiOS"), {text:"",
+				var qrcode1 = new QRCode(document.getElementById("qrcodeiOS"), {
+					text: "",
 					width: 200,
 					height: 200,
-					colorDark : "#000000",
-					colorLight : "#ffffff",
-					correctLevel : QRCode.CorrectLevel.H});
+					colorDark: "#000000",
+					colorLight: "#ffffff",
+					correctLevel: QRCode.CorrectLevel.H
+				});
 				qrcode1.clear();
 				qrcode1.makeCode("https://apps.apple.com/app/id1587846395");
-				
-				
-					var qrcode2 = new QRCode(document.getElementById("qrcodeAndroid"), {text:"",
-						width: 200,
-						height: 200,
-						colorDark : "#000000",
-						colorLight : "#ffffff",
-						correctLevel : QRCode.CorrectLevel.H});
-					qrcode2.clear();
-					qrcode2.makeCode("https://baidu.com");
+
+
+				var qrcode2 = new QRCode(document.getElementById("qrcodeAndroid"), {
+					text: "",
+					width: 200,
+					height: 200,
+					colorDark: "#000000",
+					colorLight: "#ffffff",
+					correctLevel: QRCode.CorrectLevel.H
+				});
+				qrcode2.clear();
+				qrcode2.makeCode("https://baidu.com");
 			}
 			productQRCode()
+
 			function downios() {
 				console.log("下载iOS")
 				window.open("https://apps.apple.com/app/id1587846395")
 			}
+
 			function downAndroid() {
 				console.log("下载android")
 			}

@@ -21,6 +21,32 @@ body {
 	text-align: center;
 }
 
+.main-download-iOS-btn {
+	background-color: #000000;
+	height: 3.25rem;
+	width: 15rem;
+	padding: 0.875rem !important;
+	border-radius: 12px !important;
+	color: white;
+	margin: auto;
+	margin-top: 1.875rem;
+	text-align: center;
+	border: none;
+}
+
+.main-download-android-btn {
+	background-color: #04C36C;
+	height: 3.25rem;
+	width: 15rem;
+	padding: 0.875rem !important;
+	border-radius: 12px !important;
+	color: white;
+	margin: auto;
+	margin-top: 1.875rem;
+	text-align: center;
+	border: none;
+}
+
 @media(max-width: 99999px) {
 	.main_headerTitle {
 		margin-top: 8.75rem;
@@ -64,29 +90,12 @@ body {
 		width: 700px;
 		height: auto;
 	}
+
 	.main-download-background {
 		padding-top: 7.5625rem;
 		padding-bottom: 12.1875rem;
 	}
-	
-	.main-download-iOS-btn {
-		background-color: #000000; 
-		height: 52px; 
-		padding: 0.875rem 3.6875rem !important; 
-		border-radius: 12px !important;
-		color: white;
-		margin-top: 1.875rem;
-		text-align: center;
-	}
-	.main-download-android-btn {
-		background-color: #04C36C; 
-		height: 52px; 
-		padding: 0.875rem 3.6875rem !important; 
-		border-radius: 12px !important;
-		color: white;
-		margin-top: 1.875rem;
-	}
-	
+
 	.aboutTitleFont {
 		font-weight: 600;
 		font-size: 54px;
