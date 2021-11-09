@@ -45,7 +45,7 @@
 					<div class="col-md-7 featurette-heading">
 						<h1 class="">词链：创新的信息组织方式</h1>
 						<p class="lead">更符合人脑记忆系统的思维工具，低成本输入词条，持续迭代词链，搭建及管理个人成长知识体系。</p>
-						<p class="btn btn-primary normal-font col-xxl-2 col-md-12 main-download-btn"
+						<p class="btn btn-primary normal-font col-xxl-2 col-md-12 main-download-btn" onclick="scrollToDown()"
 							style="background-color: #04C36C; border-style: none;">去下载</p>
 					</div>
 					<div class="col-md-5">
@@ -127,7 +127,7 @@
 		</main>
 
 		<div style="background-color: #F3F4F5;" class="main-download-background">
-			<h2 class="main-normal-title" style="font-size: 2.5rem;">免费下载应用</h2>
+			<h2 id="downloadTitle" class="main-normal-title" style="font-size: 2.5rem;">免费下载应用</h2>
 			<div class="container">
 				<div class="row text-center">
 					<div class="col-xxl-5 text-center" style="margin: auto; padding-top: 6.875rem;">
@@ -199,6 +199,13 @@
 
 			function downAndroid() {
 				console.log("下载android")
+			}
+			
+			function scrollToDown() {
+				console.log("跳到下载")
+				var downTitle = document.getElementById("downloadTitle")
+				console.log("元素:" + downTitle)				
+				downTitle.scrollIntoView(true)
 			}
 		</script>
 	</body>
