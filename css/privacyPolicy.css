@@ -1,0 +1,23 @@
+.userHeaderTitle{
+	position: absolute;
+	width: 196px;
+	height: 22px;
+	left: 20px;
+	top: 98px;
+	
+	font-family: PingFang SC;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #181819;
+}
+
+p {
+	font-family: PingFang SC;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 26px;
+	color: #181819;
+}
