@@ -21,3 +21,8 @@ p {
 	line-height: 26px;
 	color: #181819;
 }
+
+body {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
